@@ -32,24 +32,24 @@ class Fxg(Tk):
     
     
         
-#set the suttons
+#set the Buttons
         
     def  buttonstart(self):
 
-        self.bstart = ttk.Button(width = 16,text = "Start",command = self.run).grid(column = 1, row = 5)
-        #self.bstart.grid(column = 1, row = 5)
+        self.bstart = ttk.Button(width = 16,text = "Start",command = self.run).grid(column = 1, row = 5) #Set start button 
+        
         
     def buttonquit(self):
-        self.bquit = ttk.Button(width = 16,text = "Quit",command = self.quit).grid(column = 1, row = 6)
-        #self.bquit.grid(column = 1, row = 6)
-
+        self.bquit = ttk.Button(width = 16,text = "Quit",command = self.quit).grid(column = 1, row = 6) #Set exit button 
+        
+#set the box to type url 
     def  url(self):
 
-        self.urlentry = ttk.Entry (width = 50)#.grid(column = 2, row = 1)
+        self.urlentry = ttk.Entry (width = 50)#.grid(column = 2, row = 1) # set url box
         self.urlentry.grid(column = 2, row = 1)
     
 
-        self.urlname = ttk.Label(width= 15, text = "Enter URL") #grid(column = 1, row = 1)
+        self.urlname = ttk.Label(width= 15, text = "Enter URL") #grid(column = 1, row = 1) #set text box
         self.urlname.grid(column = 1, row = 1)
         
         
