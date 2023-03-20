@@ -30,7 +30,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install build
-        python -m pip install flake8 pytest requests bs4 pytube
+        python -m pip install flake8 pytest pytube
     - name: Build package
       run: python -m build
     - name: Publish package
