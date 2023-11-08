@@ -96,9 +96,13 @@ class Fxg(Tk):
             a.download(folder_selected, filename = name+".mp4")
         
             self.progress.destroy()
+            self.urlentry.delete(0, 'end')
+            self.vidnameb.delete(0, 'end')
         except:
             print("connetion issues")
             self.progress.destroy()
+            self.urlentry.delete(0, 'end')
+            self.vidnameb.delete(0, 'end')
         
         
         
